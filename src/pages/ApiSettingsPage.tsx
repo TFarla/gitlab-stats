@@ -1,7 +1,8 @@
 import CommitListCell from "../cells/CommitListCell";
+import ProjectListCell from "../cells/ProjectListCell";
 import ApiSettings from "../components/ApiSettings"
 import { useAppQuery } from "../graphql";
-import { gitlabUrlVar, apiKeyVar } from '../graphql/cache';
+import { gitlabUrlVar, apiKeyVar, projectIdVar } from '../graphql/cache';
 
 export const ApiSettingsPage = () => {
   const { data, loading } = useAppQuery();
@@ -9,8 +10,19 @@ export const ApiSettingsPage = () => {
     return null;
   }
 
-  if (data.apiKey && data.apiKey.length > 0) {
-    return <CommitListCell gitlabUrl={data.gitlabUrl} projectId={data.projectId} apiKey={data.apiKey} />
+  const hasApiKey = data.apiKey && data.apiKey.length > 0;
+  if (hasApiKey && data.projectId) {
+    return <CommitListCell
+      gitlabUrl={data.gitlabUrl}
+      projectId={data.projectId}
+      apiKey={data.apiKey} />
+  } else if (hasApiKey) {
+    return <ProjectListCell
+      gitlabUrl={data.gitlabUrl}
+      apiKey={data.apiKey}
+      onClick={(project) => {
+      projectIdVar(project.id);
+    }}/>
   } else {
     return (
       <div>
