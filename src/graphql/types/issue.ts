@@ -1,0 +1,42 @@
+import Author from "./author";
+import { Links } from "./links";
+import Milestone from "./milestone";
+import { References } from "./references";
+import { TaskCompletionStatus } from "./task-completion-stats";
+import TimeStats from "./time-stats";
+
+export interface Issue {
+  id: number;
+  iid: number;
+  project_id: number;
+  title: string;
+  description: string;
+  state: string;
+  created_at: Date;
+  updated_at: Date;
+  closed_at?: Date;
+  closed_by: Author;
+  labels: string[];
+  milestone: Milestone;
+  assignees: Author[];
+  author: Author;
+  assignee: Author;
+  user_notes_count: number;
+  merge_requests_count: number;
+  upvotes: number;
+  downvotes: number;
+  due_date?: any;
+  confidential: boolean;
+  discussion_locked?: any;
+  web_url: string;
+  time_stats: TimeStats;
+  task_completion_status: TaskCompletionStatus;
+  weight?: any;
+  blocking_issues_count: number;
+  has_tasks: boolean;
+  _links: Links;
+  references: References;
+  moved_to_id?: any;
+  service_desk_reply_to?: any;
+  health_status?: any;
+}
