@@ -1,3 +1,4 @@
+import CommitHeatmap from "../components/CommitHeatmap";
 import { CommitsQueryResult, useCommits } from "../graphql";
 
 interface CommitsProps {
@@ -29,7 +30,7 @@ export const Error = () => {
 }
 
 export const Success = ({ data }: { data: CommitsQueryResult }) => {
-  const {commits, issues} = data;
+  const { commits, issues } = data;
   return (
     <div>
       <h4>commits</h4>
@@ -37,6 +38,11 @@ export const Success = ({ data }: { data: CommitsQueryResult }) => {
         {commits.map(commit =>
           <li key={commit.id}>{commit.title}</li>)}
       </ol>
+      <CommitHeatmap
+        startDate={new Date("2020-01-01")}
+        endDate={new Date("2020-12-31")}
+        commits={commits}
+      />
       <h4>issues</h4>
       <ol>
         {issues.map(issue => <li key={issue.id}>{issue.title}</li>)}
