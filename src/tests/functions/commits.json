@@ -1,0 +1,154 @@
+[
+  {
+    "id": "1a95648880a2b7b7710d02dcc570b4fe76b6836e",
+    "short_id": "1a956488",
+    "created_at": "2020-12-04T06:23:26.000+01:00",
+    "parent_ids": [],
+    "title": "Initialize project using Create React App",
+    "message": "Initialize project using Create React App\n",
+    "author_name": "Thomas Farla",
+    "author_email": "email@example.com",
+    "authored_date": "2020-12-04T06:23:26.000+01:00",
+    "committer_name": "Thomas Farla",
+    "committer_email": "email@example.com",
+    "committed_date": "2020-12-04T06:23:26.000+01:00",
+    "web_url": "https://gitlab.com/TFarla/gitlab-stats/-/commit/1a95648880a2b7b7710d02dcc570b4fe76b6836e"
+  },
+  {
+    "id": "6a672d339456554ae491f93c342b5c2e0f41c631",
+    "short_id": "6a672d33",
+    "created_at": "2020-12-04T07:32:10.000+01:00",
+    "parent_ids": [
+      "1a95648880a2b7b7710d02dcc570b4fe76b6836e"
+    ],
+    "title": "Setup project #1+1h",
+    "message": "Setup project #1+1h\n",
+    "author_name": "Thomas Farla",
+    "author_email": "email@example.com",
+    "authored_date": "2020-12-04T07:32:10.000+01:00",
+    "committer_name": "Thomas Farla",
+    "committer_email": "email@example.com",
+    "committed_date": "2020-12-04T07:32:10.000+01:00",
+    "web_url": "https://gitlab.com/TFarla/gitlab-stats/-/commit/6a672d339456554ae491f93c342b5c2e0f41c631"
+  },
+  {
+    "id": "d7b8832f4b8af542991069c2f2e3df52b104a072",
+    "short_id": "d7b8832f",
+    "created_at": "2020-12-04T08:08:31.000+01:00",
+    "parent_ids": [
+      "6a672d339456554ae491f93c342b5c2e0f41c631"
+    ],
+    "title": "Add whiteline to readme #2+1h",
+    "message": "Add whiteline to readme #2+1h\n",
+    "author_name": "Thomas Farla",
+    "author_email": "email@example.com",
+    "authored_date": "2020-12-04T08:08:31.000+01:00",
+    "committer_name": "Thomas Farla",
+    "committer_email": "email@example.com",
+    "committed_date": "2020-12-04T08:08:31.000+01:00",
+    "web_url": "https://gitlab.com/TFarla/gitlab-stats/-/commit/d7b8832f4b8af542991069c2f2e3df52b104a072"
+  },
+  {
+    "id": "a1ab41eb6a23ecbdcac28b943ddac99fd9037fce",
+    "short_id": "a1ab41eb",
+    "created_at": "2020-12-04T08:15:30.000+01:00",
+    "parent_ids": [
+      "d7b8832f4b8af542991069c2f2e3df52b104a072"
+    ],
+    "title": "Remove newline #2+1h",
+    "message": "Remove newline #2+1h\n",
+    "author_name": "Thomas Farla",
+    "author_email": "email@example.com",
+    "authored_date": "2020-12-04T08:15:30.000+01:00",
+    "committer_name": "Thomas Farla",
+    "committer_email": "email@example.com",
+    "committed_date": "2020-12-04T08:15:30.000+01:00",
+    "web_url": "https://gitlab.com/TFarla/gitlab-stats/-/commit/a1ab41eb6a23ecbdcac28b943ddac99fd9037fce"
+  },
+  {
+    "id": "98a53de677f1a23186dac0b979564659b121218e",
+    "short_id": "98a53de6",
+    "created_at": "2020-12-04T08:16:02.000+01:00",
+    "parent_ids": [
+      "a1ab41eb6a23ecbdcac28b943ddac99fd9037fce"
+    ],
+    "title": "Add newline #2+1h",
+    "message": "Add newline #2+1h\n",
+    "author_name": "Thomas Farla",
+    "author_email": "email@example.com",
+    "authored_date": "2020-12-04T08:16:02.000+01:00",
+    "committer_name": "Thomas Farla",
+    "committer_email": "email@example.com",
+    "committed_date": "2020-12-04T08:16:02.000+01:00",
+    "web_url": "https://gitlab.com/TFarla/gitlab-stats/-/commit/98a53de677f1a23186dac0b979564659b121218e"
+  },
+  {
+    "id": "fd4b0e4aedb40054e64e04e5505650c3c4be4d36",
+    "short_id": "fd4b0e4a",
+    "created_at": "2020-12-04T07:21:22.000+00:00",
+    "parent_ids": [
+      "6a672d339456554ae491f93c342b5c2e0f41c631",
+      "98a53de677f1a23186dac0b979564659b121218e"
+    ],
+    "title": "Merge branch '2-show-activity-chart' into 'main'",
+    "message": "Merge branch '2-show-activity-chart' into 'main'\n\nDraft: Resolve \"Show activity chart\"\n\nCloses #2\n\nSee merge request TFarla/gitlab-stats!1",
+    "author_name": "Thomas Farla",
+    "author_email": "email@example.com",
+    "authored_date": "2020-12-04T07:21:22.000+00:00",
+    "committer_name": "Thomas Farla",
+    "committer_email": "email@example.com",
+    "committed_date": "2020-12-04T07:21:22.000+00:00",
+    "web_url": "https://gitlab.com/TFarla/gitlab-stats/-/commit/fd4b0e4aedb40054e64e04e5505650c3c4be4d36"
+  },
+  {
+    "id": "bf45d20b4a06ac415187fdf7c91d33fd5a714e58",
+    "short_id": "bf45d20b",
+    "created_at": "2020-12-04T14:55:00.000+01:00",
+    "parent_ids": [
+      "6a672d339456554ae491f93c342b5c2e0f41c631"
+    ],
+    "title": "Fetch commits and issues from gitlab #2+4h",
+    "message": "Fetch commits and issues from gitlab #2+4h\n",
+    "author_name": "Thomas Farla",
+    "author_email": "email@example.com",
+    "authored_date": "2020-12-04T14:55:00.000+01:00",
+    "committer_name": "Thomas Farla",
+    "committer_email": "email@example.com",
+    "committed_date": "2020-12-04T14:55:00.000+01:00",
+    "web_url": "https://gitlab.com/TFarla/gitlab-stats/-/commit/bf45d20b4a06ac415187fdf7c91d33fd5a714e58"
+  },
+  {
+    "id": "22edd3fced215e8b4a17eb996c0f9ee7c7f48c05",
+    "short_id": "22edd3fc",
+    "created_at": "2020-12-04T15:45:06.000+01:00",
+    "parent_ids": [
+      "bf45d20b4a06ac415187fdf7c91d33fd5a714e58"
+    ],
+    "title": "Add commit heatmap #2+1h",
+    "message": "Add commit heatmap #2+1h\n",
+    "author_name": "Thomas Farla",
+    "author_email": "email@example.com",
+    "authored_date": "2020-12-04T15:45:06.000+01:00",
+    "committer_name": "Thomas Farla",
+    "committer_email": "email@example.com",
+    "committed_date": "2020-12-04T15:45:06.000+01:00",
+    "web_url": "https://gitlab.com/TFarla/gitlab-stats/-/commit/22edd3fced215e8b4a17eb996c0f9ee7c7f48c05"
+  },
+  {
+    "id": "4d6ab3be33590e33a28fb542f30aa99bc419587d",
+    "short_id": "4d6ab3be",
+    "created_at": "2020-12-04T17:06:06.000+01:00",
+    "parent_ids": [
+      "22edd3fced215e8b4a17eb996c0f9ee7c7f48c05"
+    ],
+    "title": "Add project picker #3+1h",
+    "message": "Add project picker #3+1h\n",
+    "author_name": "Thomas Farla",
+    "author_email": "email@example.com",
+    "authored_date": "2020-12-04T17:06:06.000+01:00",
+    "committer_name": "Thomas Farla",
+    "committer_email": "email@example.com",
+    "committed_date": "2020-12-04T17:06:06.000+01:00",
+    "web_url": "https://gitlab.com/TFarla/gitlab-stats/-/commit/4d6ab3be33590e33a28fb542f30aa99bc419587d"
+  }
+]

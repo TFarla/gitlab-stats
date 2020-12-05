@@ -6,7 +6,8 @@
       "wix.vscode-import-cost",
       "pflannery.vscode-versionlens",
       "editorconfig.editorconfig",
-      "silvenon.mdx"
+      "silvenon.mdx",
+      "orta.vscode-jest"
     ],
     "unwantedRecommendations": []
   }

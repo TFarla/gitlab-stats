@@ -6,7 +6,7 @@ import { Issue } from "../types/issue";
 export const commitsQuery = gql`
   query commits($url: String!, $projectId: Int!, $apiKey: String!) {
     commits(url: $url, projectId: $projectId, apiKey: $apiKey)
-    @rest(type: "Commit", path: "{args.url}/api/v4/projects/{args.projectId}/repository/commits/?private_token={args.apiKey}&per_page=100") {
+    @rest(type: "Commit", path: "{args.url}/api/v4/projects/{args.projectId}/repository/commits/?private_token={args.apiKey}&all=true&per_page=100000") {
       id
       title
       message

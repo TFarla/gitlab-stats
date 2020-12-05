@@ -4,5 +4,6 @@
         "titleBar.activeBackground": "#3D422A",
         "titleBar.activeForeground": "#FBFBF9"
     },
-    "typescript.tsdk": "node_modules/typescript/lib"
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "terminal.integrated.shellArgs.linux": ["-l"]
 }
