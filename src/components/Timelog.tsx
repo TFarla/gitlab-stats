@@ -2,8 +2,8 @@ import { buildTimeLog } from "../functions";
 import Commit from "../graphql/types/commit";
 import CalendarHeatmap from 'react-calendar-heatmap';
 import React from "react";
+import ReactTooltip from 'react-tooltip';
 import 'react-calendar-heatmap/dist/styles.css';
-
 
 export interface Props {
   commits: Commit[]
@@ -16,14 +16,26 @@ interface HeatmapEntry {
 
 export const Timelog = (props: Props) => {
   const logs = Array.from(buildTimeLog(props.commits || []));
-  const values = logs.map<HeatmapEntry>(([date, log]) => ({
-    date,
-    count: log.tasks.reduce<number>((acc, task) => acc + task.totalTimeInMinutes, 0)
-  }));
+  let max = 0;
+  const values = logs.map<HeatmapEntry>(([date, log]) => {
+    const count = log.tasks.reduce<number>((acc, task) => task.totalTimeInMinutes, 0);
+    if (count > max) {
+      max = count;
+    }
+
+    const data = {
+      date,
+      count
+    };
+
+    return data;
+  });
 
   if (logs.length === 0) {
     return <div>No commits found</div>
   }
+
+  const bucketSize = (max / 4);
 
   return (
     <div>
@@ -31,7 +43,27 @@ export const Timelog = (props: Props) => {
         startDate={'2020-01-01'}
         endDate={'2020-12-31'}
         values={values || []}
+        tooltipDataAttrs={(value: any) => {
+          if (!value.count) {
+            return {
+              'data-tip': 'No records found'
+            }
+          }
+
+          return {
+            'data-tip': `${new Date(value.date).toLocaleDateString()}: ${(value.count/60).toFixed(1)} hour(s) `,
+          };
+        }}
+        classForValue={(value) => {
+          if (!value) {
+            return 'color-empty';
+          }
+
+          const bucket = Math.max(Math.floor(value.count / bucketSize), 1);
+          return `color-gitlab-${bucket}`;
+        }}
       />
+      <ReactTooltip />
       <table>
         <thead>
           <tr>

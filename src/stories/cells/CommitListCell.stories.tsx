@@ -1,20 +1,7 @@
 import * as Cell from '../../cells/CommitListCell';
 import { Meta, Story } from '@storybook/react/types-6-0';
-import Commit from '../../graphql/types/commit';
 import { Issue } from '../../graphql/types/issue';
-
-const commits: Partial<Commit>[] = [
-  {
-    id: "134",
-    title: "do something",
-    created_at: "2020-12-04T06:23:57.589Z"
-  },
-  {
-    id: "567",
-    title: "do something2",
-    created_at: "2020-11-04T06:23:57.589Z"
-  }
-] as Commit[];
+import commits from '../../tests/functions/commits.json';
 
 const issues: Partial<Issue>[] = [
   {
@@ -34,6 +21,14 @@ Success.args = {
     issues
   },
 } as Cell.SuccessProps
+Success.argTypes = {
+  data: {
+    table: {
+      disable: true
+    }
+  }
+}
+
 export const Empty: Story = SuccessTemplate.bind({});
 Empty.args = {
   data: {
@@ -41,6 +36,13 @@ Empty.args = {
     issues: []
   },
 } as Cell.SuccessProps
+Empty.argTypes = {
+  data: {
+    table: {
+      disable: true
+    }
+  }
+}
 
 export const Loading: Story = LoadingTemplate.bind({})
 
