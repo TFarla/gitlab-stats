@@ -7,22 +7,6 @@ Map {
       Object {
         "author_email": "email@example.com",
         "author_name": "Thomas Farla",
-        "authored_date": "2020-12-04T06:23:26.000+01:00",
-        "committed_date": "2020-12-04T06:23:26.000+01:00",
-        "committer_email": "email@example.com",
-        "committer_name": "Thomas Farla",
-        "created_at": "2020-12-04T06:23:26.000+01:00",
-        "id": "1a95648880a2b7b7710d02dcc570b4fe76b6836e",
-        "message": "Initialize project using Create React App
-",
-        "parent_ids": Array [],
-        "short_id": "1a956488",
-        "title": "Initialize project using Create React App",
-        "web_url": "https://gitlab.com/TFarla/gitlab-stats/-/commit/1a95648880a2b7b7710d02dcc570b4fe76b6836e",
-      },
-      Object {
-        "author_email": "email@example.com",
-        "author_name": "Thomas Farla",
         "authored_date": "2020-12-04T07:32:10.000+01:00",
         "committed_date": "2020-12-04T07:32:10.000+01:00",
         "committer_email": "email@example.com",
@@ -91,30 +75,6 @@ Map {
         "short_id": "98a53de6",
         "title": "Add newline #2+1h",
         "web_url": "https://gitlab.com/TFarla/gitlab-stats/-/commit/98a53de677f1a23186dac0b979564659b121218e",
-      },
-      Object {
-        "author_email": "email@example.com",
-        "author_name": "Thomas Farla",
-        "authored_date": "2020-12-04T07:21:22.000+00:00",
-        "committed_date": "2020-12-04T07:21:22.000+00:00",
-        "committer_email": "email@example.com",
-        "committer_name": "Thomas Farla",
-        "created_at": "2020-12-04T07:21:22.000+00:00",
-        "id": "fd4b0e4aedb40054e64e04e5505650c3c4be4d36",
-        "message": "Merge branch '2-show-activity-chart' into 'main'
-
-Draft: Resolve \\"Show activity chart\\"
-
-Closes #2
-
-See merge request TFarla/gitlab-stats!1",
-        "parent_ids": Array [
-          "6a672d339456554ae491f93c342b5c2e0f41c631",
-          "98a53de677f1a23186dac0b979564659b121218e",
-        ],
-        "short_id": "fd4b0e4a",
-        "title": "Merge branch '2-show-activity-chart' into 'main'",
-        "web_url": "https://gitlab.com/TFarla/gitlab-stats/-/commit/fd4b0e4aedb40054e64e04e5505650c3c4be4d36",
       },
       Object {
         "author_email": "email@example.com",

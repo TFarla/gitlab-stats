@@ -20,9 +20,12 @@ const timeRegex = /((?<day>\d+)d|(?<hour>\d+)h|(?<minute>\d+)m)/g;
 export const buildTimeLog = (commits: Commit[]) =>
   commits.reduce<LogMap>((acc, commit) => {
     const isoDate = toIsoDate(commit.committed_date);
-    debugger;
     const dateString = isoDate.toISOString();
     const tasks = toTasks(commit);
+    if (tasks.length === 0) {
+      return acc;
+    }
+
     if (acc.has(dateString)) {
       const entry = acc.get(dateString);
       if (entry) {

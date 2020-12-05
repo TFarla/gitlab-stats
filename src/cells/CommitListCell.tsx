@@ -39,13 +39,7 @@ export const Success = ({ data }: SuccessProps) => {
       <h4>commits</h4>
       {
         hasCommits && (
-          <>
-            <ol>
-              {commits.map(commit =>
-                <li key={commit.id}>{commit.title}</li>)}
-            </ol>
-            <Timelog commits={commits} />
-          </>
+          <Timelog commits={commits} />
         )
       }
       {
