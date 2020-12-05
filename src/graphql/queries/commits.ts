@@ -11,6 +11,7 @@ export const commitsQuery = gql`
       title
       message
       created_at
+      committed_date
     }
 
     issues(url:$url, projectId: $projectId, apiKey: $apiKey)

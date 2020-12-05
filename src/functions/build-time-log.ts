@@ -20,6 +20,7 @@ const timeRegex = /((?<day>\d+)d|(?<hour>\d+)h|(?<minute>\d+)m)/g;
 export const buildTimeLog = (commits: Commit[]) =>
   commits.reduce<LogMap>((acc, commit) => {
     const isoDate = toIsoDate(commit.committed_date);
+    debugger;
     const dateString = isoDate.toISOString();
     const tasks = toTasks(commit);
     if (acc.has(dateString)) {
@@ -39,8 +40,14 @@ export const buildTimeLog = (commits: Commit[]) =>
   }, new Map());
 
 function toIsoDate(isoDateString: string) {
+  try {
+
   const date = new Date(isoDateString);
   return new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
+  } catch(e) {
+    debugger;
+    return new Date();
+  }
 }
 
 const toTasks = (commit: Commit) =>

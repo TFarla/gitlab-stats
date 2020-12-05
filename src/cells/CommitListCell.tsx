@@ -1,4 +1,5 @@
 import CommitHeatmap from "../components/CommitHeatmap";
+import { Timelog } from "../components/Timelog";
 import { CommitsQueryResult, projectIdVar, useCommits } from "../graphql";
 
 interface CommitsProps {
@@ -44,11 +45,7 @@ export const Success = ({ data }: SuccessProps) => {
               {commits.map(commit =>
                 <li key={commit.id}>{commit.title}</li>)}
             </ol>
-            <CommitHeatmap
-              startDate={new Date("2020-01-01")}
-              endDate={new Date("2020-12-31")}
-              commits={commits}
-            />
+            <Timelog commits={commits} />
           </>
         )
       }
