@@ -1,4 +1,3 @@
-import CommitHeatmap from "../components/CommitHeatmap";
 import { Timelog } from "../components/Timelog";
 import { CommitsQueryResult, projectIdVar, useCommits } from "../graphql";
 

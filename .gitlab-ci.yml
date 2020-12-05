@@ -1,0 +1,18 @@
+stages:
+    - deploy
+
+# job to deploy the public facing website
+# Full project: https://gitlab.com/pages/plain-html
+pages:
+    stage: deploy
+    image: node:latest
+    script:
+        - yarn
+        - yarn build
+        # gitlab pages is hosted from the public directory
+        - rm -rf public && mv build public
+    artifacts:
+        paths:
+            - public
+    only:
+        - main
